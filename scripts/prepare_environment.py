@@ -838,9 +838,9 @@ def run_all() -> None:
             "description": "",  # Project description
             # User and maintainer information
             "user_config": {
-                "user_name": "kairos-xx",  # GitHub username
-                "user_email": "joaoslopes@gmail.com",  # Contact email
-                "name": "Joao Lopes",  # Full name
+                "user_name": "username",  # GitHub username
+                "user_email": "email@email.com",  # Contact email
+                "name": "Authot name",  # Full name
             },
             # Project repository URLs
             "urls": {
@@ -878,21 +878,6 @@ def run_all() -> None:
             ],
         },
     }
-
-    def decrypt_string(encrypted_hex: str, key: str = "SECRET") -> str:
-        """Decrypt a hex string using XOR cipher with the same key."""
-        # Convert hex back to string
-        encrypted = bytes.fromhex(encrypted_hex).decode()
-
-        # XOR each character with corresponding key character
-        return "".join(
-            chr(ord(c) ^ ord(k))
-            for c, k in zip(
-                encrypted,
-                (key * (len(encrypted) // len(key) + 1))[: len(encrypted)],
-                strict=True,
-            )
-        )
 
     setup = project_info["setup"]
     missing_packages = check_packages(setup["required_packages"])
