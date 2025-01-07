@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://github.com/kairos-xx/GitPyPi_3.12/raw/main/assets/icon_raster2.png" alt="Replit Info API Logo" width="150"/>
+  <img src="https://github.com/kairos-xx/GitPyPi_3.12/raw/main/assets/icon_raster.png" alt="Replit Info API Logo" width="150"/>
   <h1>Python Project Template with GitHub and PyPI Integration</h1>
   <p><em>This template provides a complete setup for Python projects with automated GitHub repository creation and PyPI package publishing capabilities.</em></p>
 
