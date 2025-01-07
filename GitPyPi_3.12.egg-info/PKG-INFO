@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: GitPyPi_3.12
-Version: 0.1.6
+Version: 0.1.7
 Summary: This template provides a complete setup for Python projects with automated GitHub repository creation and PyPI package publishing capabilities.
 Home-page: https://github.com/kairos-xx/GitPyPi_3.12
 Author: Joao Lopess
@@ -34,7 +34,7 @@ License:
         
 Project-URL: Homepage, https://github.com/kairos-xx/GitPyPi_3.12.git
 Project-URL: Repository, https://github.com/kairos-xx/GitPyPi_3.12.git
-Classifier: Development Status :: 1 - Planning
+Classifier: Development Status :: 5 - Production/Stable
 Classifier: Intended Audience :: Developers
 Classifier: Intended Audience :: Science/Research
 Classifier: License :: OSI Approved :: MIT License
@@ -43,8 +43,6 @@ Classifier: Programming Language :: Python :: 3.11
 Classifier: Operating System :: OS Independent
 Classifier: Natural Language :: English
 Classifier: Typing :: Typed
-Classifier: Topic :: Software Development :: Libraries :: Python Modules
-Classifier: Topic :: Software Development :: Libraries :: Python Modules
 Classifier: Topic :: Software Development :: Libraries :: Python Modules
 Requires-Python: >=3.11
 Description-Content-Type: text/markdown
