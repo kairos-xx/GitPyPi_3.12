@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: GitPyPi_3.12
-Version: 0.1.2
+Version: 0.1.3
 Home-page: https://github.com/kairos-xx/GitPyPi_3.12
 Author: Joao Lopess
 Author-email: Joao Lopes <joaoslopes@gmail.com>
@@ -50,7 +50,7 @@ Description-Content-Type: text/markdown
 License-File: LICENSE
 
 <div align="center">
-  <img src="https://github.com/kairos-xx/GitPyPi_3.12/raw/main/assets/icon_raster.png" alt="Replit Info API Logo" width="150"/>
+  <img src="https://github.com/kairos-xx/GitPyPi_3.12/raw/main/assets/icon_raster_new.png" alt="Replit Info API Logo" width="150"/>
   <h1>Python Project Template with GitHub and PyPI Integration</h1>
   <p><em>This template provides a complete setup for Python projects with automated GitHub repository creation and PyPI package publishing capabilities.</em></p>
 

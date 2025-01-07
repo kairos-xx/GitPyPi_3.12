@@ -5,7 +5,7 @@ from setuptools import find_packages, setup
 
 setup(
     name="GitPyPi_3.12",
-    version="0.1.2",
+    version="0.1.3",
     packages=find_packages(),
     install_requires=[
         'pytest>=7.0.0',
