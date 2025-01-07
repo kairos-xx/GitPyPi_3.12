@@ -7,9 +7,6 @@
     <img src="https://github.com/kairos-xx/GitPyPi_3.12/raw/main/assets/replit.png" alt="Try it on Replit" width="150"/>
   </a>
 </div>
-# Python Project Template with GitHub and PyPI Integration
-
-This template provides a complete setup for Python projects with automated GitHub repository creation and PyPI package publishing capabilities.
 
 ## Key Features
 
