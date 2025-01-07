@@ -1,4 +1,12 @@
+<div align="center">
+  <img src="https://github.com/kairos-xx/GitPyPi_3.12/raw/main/assets/icon_raster.png" alt="Replit Info API Logo" width="150"/>
+  <h1>Python Project Template with GitHub and PyPI Integration</h1>
+  <p><em>This template provides a complete setup for Python projects with automated GitHub repository creation and PyPI package publishing capabilities.</em></p>
 
+  <a href="https://replit.com/@kairos/GitPyPi312">
+    <img src="https://github.com/kairos-xx/GitPyPi_3.12/raw/main/assets/replit.png" alt="Try it on Replit" width="150"/>
+  </a>
+</div>
 # Python Project Template with GitHub and PyPI Integration
 
 This template provides a complete setup for Python projects with automated GitHub repository creation and PyPI package publishing capabilities.

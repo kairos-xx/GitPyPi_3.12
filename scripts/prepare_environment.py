@@ -803,77 +803,78 @@ def run_all() -> None:
             ],
         },
         # Setup configuration for project initialization and management
-    "setup": {
+        "setup": {
             # File path configurations for project structure
             "paths": {
-                "pyproject": "pyproject.toml",          # Python project configuration
-                "requirements": "requirements.txt",      # Python dependencies
-                "replit": ".replit",                    # Replit IDE configuration
-                "nix": "replit.nix",                    # Nix environment setup
-                "readme": "README.md",                  # Project documentation
-                "license": "LICENSE",                   # Project license
-                "current_script": "scripts/prepare_environment.py",  # This script
-                "pypi_upload": "scripts/pypi_upload.py",            # PyPI upload utility
-                "create_zip": "scripts/create_zip.py",              # Archive creator
-                "create_zip_folder": "zip",             # Archive storage
-                "logs_folder": "logs",                  # Log file storage
-                "entrypoint": "main.py",               # Project entry point
-                "source_folder": "src",                # Source code directory
-                "setup": "setup.py",                   # Package setup file
-                "replit_id_url": (                     # Replit project ID API
+                "pyproject": "pyproject.toml",  # Python project configuration
+                "requirements": "requirements.txt",  # Python dependencies
+                "replit": ".replit",  # Replit IDE configuration
+                "nix": "replit.nix",  # Nix environment setup
+                "readme": "README.md",  # Project documentation
+                "license": "LICENSE",  # Project license
+                "current_script": "scripts/prepare_environment.py",
+                # This script
+                "pypi_upload": "scripts/pypi_upload.py",  # PyPI upload utility
+                "create_zip": "scripts/create_zip.py",  # Archive creator
+                "create_zip_folder": "zip",  # Archive storage
+                "logs_folder": "logs",  # Log file storage
+                "entrypoint": "main.py",  # Project entry point
+                "source_folder": "src",  # Source code directory
+                "setup": "setup.py",  # Package setup file
+                "replit_id_url": (  # Replit project ID API
                     "https://replit-info.replit.app/" + "get?title&replit_id="
                 ),
             },
             # PyPI project classifiers configuration
             "classifiers": {
-                "development_status": 1,               # Planning stage
-                "topics": [                           # Project categories
+                "development_status": 1,  # Planning stage
+                "topics": [  # Project categories
                     "Python Modules",
                     "Code Generators",
                     "Debuggers",
                 ],
             },
-            "version": "0.1.1",                      # Initial project version
-            "description": "",                       # Project description
+            "version": "0.1.1",  # Initial project version
+            "description": "",  # Project description
             # User and maintainer information
             "user_config": {
-                "user_name": "kairos-xx",            # GitHub username
-                "user_email": "joaoslopes@gmail.com", # Contact email
-                "name": "Joao Lopes",                # Full name
+                "user_name": "kairos-xx",  # GitHub username
+                "user_email": "joaoslopes@gmail.com",  # Contact email
+                "name": "Joao Lopes",  # Full name
             },
             # Project repository URLs
             "urls": {
-                "Homepage": "https://github.com/",    # Project homepage
-                "Repository": "https://github.com/",   # Source repository
+                "Homepage": "https://github.com/",  # Project homepage
+                "Repository": "https://github.com/",  # Source repository
             },
             # Python package dependencies
             "requirements": [
-                "pytest>=7.0.0",                     # Testing framework
+                "pytest>=7.0.0",  # Testing framework
                 "pytest",
-                "replit==4.1.0",                    # Replit integration
-                "black",                            # Code formatter
-                "flake8",                          # Code linter
-                "build",                           # Package builder
-                "requests",                        # HTTP client
-                "pyright",                         # Type checker
-                "toml",                            # TOML parser
-                "pyyaml",                          # YAML parser
-                "isort",                           # Import sorter
-                "pyproject-flake8",                # Modern flake8
-                "zipfile38==0.0.3",                # Archive handling
+                "replit==4.1.0",  # Replit integration
+                "black",  # Code formatter
+                "flake8",  # Code linter
+                "build",  # Package builder
+                "requests",  # HTTP client
+                "pyright",  # Type checker
+                "toml",  # TOML parser
+                "pyyaml",  # YAML parser
+                "isort",  # Import sorter
+                "pyproject-flake8",  # Modern flake8
+                "zipfile38==0.0.3",  # Archive handling
             ],
             # Nix environment package requirements
             "nix_packages": [
-                "pkgs.libyaml",                    # YAML library
-                "pkgs.ruff",                       # Fast Python linter
-                "pkgs.nano",                       # Text editor
-                "pkgs.python312Full",              # Python runtime
+                "pkgs.libyaml",  # YAML library
+                "pkgs.ruff",  # Fast Python linter
+                "pkgs.nano",  # Text editor
+                "pkgs.python312Full",  # Python runtime
             ],
             # Essential setup packages
             "required_packages": [
-                "replit",                          # Replit integration
-                "requests",                        # HTTP client
-                "toml",                           # TOML parser
+                "replit",  # Replit integration
+                "requests",  # HTTP client
+                "toml",  # TOML parser
             ],
         },
     }
