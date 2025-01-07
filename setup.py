@@ -5,7 +5,7 @@ from setuptools import find_packages, setup
 
 setup(
     name="GitPyPi_3.12",
-    version="0.1.5",
+    version="0.1.6",
     packages=find_packages(),
     install_requires=[
         'pytest>=7.0.0',
@@ -29,7 +29,7 @@ setup(
     long_description_content_type="text/markdown",
     url="https://github.com/kairos-xx/GitPyPi_3.12",
     classifiers=[
-        'Development Status :: 1 - Planning',
+        'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
         'Intended Audience :: Science/Research',
         'License :: OSI Approved :: MIT License',
@@ -38,8 +38,6 @@ setup(
         'Operating System :: OS Independent',
         'Natural Language :: English',
         'Typing :: Typed',
-        'Topic :: Software Development :: Libraries :: Python Modules',
-        'Topic :: Software Development :: Libraries :: Python Modules',
         'Topic :: Software Development :: Libraries :: Python Modules'
     ],
     python_requires=">=3.11",

@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: GitPyPi_3.12
-Version: 0.1.5
+Version: 0.1.6
 Summary: This template provides a complete setup for Python projects with automated GitHub repository creation and PyPI package publishing capabilities.
 Home-page: https://github.com/kairos-xx/GitPyPi_3.12
 Author: Joao Lopess

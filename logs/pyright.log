@@ -1,1 +1,5 @@
-0 errors, 0 warnings, 0 informations 
+/home/runner/workspace/scripts/prepare_environment.py
+  /home/runner/workspace/scripts/prepare_environment.py:154:20 - error: "{" was not closed
+  /home/runner/workspace/scripts/prepare_environment.py:789:24 - error: "{" was not closed
+  /home/runner/workspace/scripts/prepare_environment.py:799:23 - error: "[" was not closed
+3 errors, 0 warnings, 0 informations 
