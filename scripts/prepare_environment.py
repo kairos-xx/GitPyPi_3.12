@@ -481,8 +481,7 @@ def run_all() -> None:
               ];
             }
             """,
-            "pypi_upload":
-            '''
+            "pypi_upload": '''
             """
             PyPI package upload script.
             Handles building and uploading package to PyPI with proper
@@ -643,11 +642,7 @@ def run_all() -> None:
             def main() -> None:
                 """Main execution function for PyPI package upload."""
                 print(datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
-                _ = info.id or ""
-                response = get(
-                    "https://replit-info.replit.app/get?title&replit_id=" + _i
-                )
-                project_name = response.text.replace('"', "").strip()
+                project_name = "@@project_name@@"
                 pyproject_path = "@@pyproject@@"
 
                 # Install required packages
@@ -766,8 +761,7 @@ def run_all() -> None:
             CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
             SOFTWARE.
             """,
-            "setup":
-            """
+            "setup": """
             from pathlib import Path
 
             from setuptools import find_packages, setup
@@ -935,28 +929,18 @@ def run_all() -> None:
 
     response = get(replit_id_url + info.id)
     project_name = response.text.replace('"', "").replace("\n", "")
-    replit_owner_id = getenv("REPL_OWNER_ID", "299513")
-
+    replit_owner_id = getenv("REPL_OWNER_ID", "")
     if "GITHUB_TOKEN" not in environ:
-        environ["GITHUB_TOKEN"] = decrypt_string(
-            "342c373a30360c3522261a65620402100c02041c732b2d2e1a16"
-            "0f143c3f343d210d1c0506730a142721662135671c1b1d163504"
-            "2a391b132a21721c190c362712352a2b0222150d11732c137604"
-            "1b1716061c00141531273561640e2b"
+        raise ValueError(
+            "GITHUB_TOKEN environment variable is not set."
+            + "Please set it to your GitHub personal access token."
         )
-
-    github_token = getenv("GITHUB_TOKEN") or ""
-    if "PYPI_TOKEN" not in environ:
-        environ["PYPI_TOKEN"] = decrypt_string(
-            "233c333b681534000a310d382424106733373e26001801063b1f"
-            "041c280d3e103b1e11063b081713311a170034082c653a1f0739"
-            "71180414731f771d61082917751a610c720b2215100e2f213f18"
-            "100f2a1c281e3b1f071f3c1b107570082f303a0917002f0d6100"
-            "370b1111671f1062751b1403281f12123a0b3939761a14102a0a"
-            "141512072a111d371e757364680e0a77080373126a75351c2631"
-            "65220d141d25181a363d2c1a3c720430081c0a230f1704"
+    if "REPLIT_TOKEN" not in environ:
+        raise ValueError(
+            "REPLIT_TOKEN environment variable is not set."
+            + "Please set it to your Replit token."
         )
-
+    github_token = getenv("GITHUB_TOKEN", "")
     homepage = project_info_urls["Homepage"]
     homepage += f"{user_name}/{project_name}"
     project_info_urls["Homepage"] += f"{user_name}/{project_name}.git"
@@ -1049,8 +1033,8 @@ def run_all() -> None:
             f.write(
                 dedent(
                     templates["pypi_upload"]
+                    .replace("@@project_name@@", project_name)
                     .replace("@@pyproject@@", pyproject_path)
-                    .replace("@@replit_id_url@@", replit_id_url)
                 )
             )
         Path(f"{home}/{create_zip_path}").parent.mkdir(

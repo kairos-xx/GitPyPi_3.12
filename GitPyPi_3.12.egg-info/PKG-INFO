@@ -1,7 +1,7 @@
 Metadata-Version: 2.1
-Name: GitPyPi312
+Name: GitPyPi_3.12
 Version: 0.1.1
-Home-page: https://github.com/kairos-xx/GitPyPi312
+Home-page: https://github.com/kairos-xx/GitPyPi_3.12
 Author: Joao Lopess
 Author-email: Joao Lopes <joaoslopes@gmail.com>
 License: 
@@ -31,8 +31,8 @@ License:
         CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
         SOFTWARE.
         
-Project-URL: Homepage, https://github.com/
-Project-URL: Repository, https://github.com/kairos-xx/GitPyPi312.git
+Project-URL: Homepage, https://github.com/kairos-xx/GitPyPi_3.12.git
+Project-URL: Repository, https://github.com/kairos-xx/GitPyPi_3.12.git
 Classifier: Development Status :: 1 - Planning
 Classifier: Intended Audience :: Developers
 Classifier: Intended Audience :: Science/Research
