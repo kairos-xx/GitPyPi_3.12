@@ -1,8 +1,0 @@
-LICENSE
-README.md
-pyproject.toml
-setup.py
-GitPyPi_3.12.egg-info/PKG-INFO
-GitPyPi_3.12.egg-info/SOURCES.txt
-GitPyPi_3.12.egg-info/dependency_links.txt
-GitPyPi_3.12.egg-info/top_level.txt
